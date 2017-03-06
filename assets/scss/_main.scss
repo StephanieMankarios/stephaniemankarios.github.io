@@ -118,9 +118,60 @@ li span, p span {
     height: 5.2rem;
 }
 
+
+
+
 /*-------------------
 header
 ---------------------*/
+
+
+// CTA button
+.subscribe-form {
+	margin: 20px 0;
+}
+
+.input-group {
+	position: relative;
+	display: table;
+	border-collapse: separate;
+}
+
+.input-group .form-control {
+	font-size: 1.5rem;
+	border-radius: 25px;
+}
+
+.subscribe-form .input-group-btn .btn {
+	font-size: 1.6rem;
+	padding-left: 30px;
+  padding-right: 30px;
+  -webkit-border-radius: 0 25px 25px 0;
+  -moz-border-radius: 0 25px 25px 0;
+  -ms-border-radius: 0 25px 25px 0;
+  -o-border-radius: 0 25px 25px 0;
+  border-radius: 0 25px 25px 0;
+}
+
+
+.btn-theme {
+	color: #fff;
+	background-color: $primary-color;
+    &:hover {
+        background-color: $dark;
+        color: #fff;
+    }
+}
+
+.jumbotron.home-page p {
+	color: white;
+	font-size: 1.5rem;
+}
+
+
+
+
+
 
 .main-menu.navbar-default {
     background-color: #fff;
@@ -886,7 +937,6 @@ Instagram
     text-decoration: none;
     list-style: none;
     margin: 0;
-    float: left;
 }
 
 
@@ -916,7 +966,7 @@ footer instragram
 }
 
 .footer-widget {
-    padding: 70px 0;
+    padding-bottom: 70px;
 }
 
 .about-content {
@@ -943,9 +993,13 @@ footer instragram
 
 
 /*==============
-athuor
+author
 ===================*/
 
+.testimonials-header {
+    padding-top: 70px;
+    margin: 0;
+}
 
 /* review section */
 
@@ -955,12 +1009,12 @@ athuor
 }
 
 .single-review {
-    padding-top: 30px;
+    // padding-top: 30px;
 }
 
 .review-text {
     border-width: 1px 1px 1px;
-    border-style: solid;
+    // border-style: solid;
     border-color: #fff;
     padding: 18px;
     position: relative;
@@ -973,21 +1027,21 @@ athuor
     margin: 0;
 }
 
-.review-text::after,
-.review-text::before {
-    top: 100%;
-    left: 15%;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-}
+// .review-text::after,
+// .review-text::before {
+//     top: 100%;
+//     left: 15%;
+//     content: " ";
+//     height: 0;
+//     width: 0;
+//     position: absolute;
+// }
 
-.review-text::after {
-    border-right: 17px solid transparent;
-    border-top: 18px solid #333333;
-    border-left: 7px solid transparent;
-}
+// .review-text::after {
+//     border-right: 17px solid transparent;
+//     border-top: 18px solid #333333;
+//     border-left: 7px solid transparent;
+// }
 
 .review-text::before {
     border-right: 19px solid transparent;
@@ -1115,9 +1169,6 @@ blog css
 .post-area {
     background: #fff;
     padding: 50px 35px;
-    h1 {
-    // margin: 0 0 25px 0;
-    }
     h1::after {
       border-bottom: 6px solid $primary-color;
   content: "";
@@ -1144,6 +1195,10 @@ blog css
     }
 }
 
+.entry-header a {
+    text-align: center;
+}
+
 .post-area {
     font-size: 1.6rem; 
     // line-height: 3.5rem;
@@ -1153,12 +1208,12 @@ blog css
     }
 }
 
-.post-content, .work-with-me-headers {
+.testimonials-header, .post-content, .work-with-me-headers {
     font-size: 1.6rem;
-        h1 {
+        h1, h3 {
     font-family: "libre-baskerville-regular";
     }
-    h1::after {
+    h1::after, h3::after {
         border-bottom: 6px solid $primary-color;
   content: "";
   display: block;
@@ -1557,7 +1612,6 @@ about me
     padding-bottom: 30px;
 }
 
-.about-us-text {}
 
 .about-us-text h4 {
     letter-spacing: 1px;
